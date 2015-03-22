@@ -1,0 +1,16 @@
+CFLAGS= -Wall
+CC= g++
+GC= gcc
+
+EXEDIR=C:/bin
+APPOBJ=C:/appobj
+OBJDR=C:/obj
+
+MYSRCLIB=../../lib
+GENCPPLIB=../../../gclib
+OBJ = $(OBJDR)/porterExtern.o $(OBJDR)/tString.o $(OBJDR)/fullSyn.o $(OBJDR)/OntyxConcept.o \
+	$(OBJDR)/OntyxRole.o $(OBJDR)/OntyxName.o $(OBJDR)/OntyxKind.o $(OBJDR)/OntyxRoleDef.o $(OBJDR)/OntyxRoleEnum.o \
+	$(OBJDR)/OntyxProperty.o $(OBJDR)/OntyxKb.o $(OBJDR)/OntyxPropertyDef.o $(OBJDR)/OntyxTerminology.o \
+	$(OBJDR)/OntylogHandler.o $(OBJDR)/OntyxAssociationDef.o $(OBJDR)/OntyxAssociation.o \
+	$(OBJDR)/OntyxQualifierDef.o $(OBJDR)/OntyxQualifier.o $(OBJDR)/OntyxKBQA.o
+

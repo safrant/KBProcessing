@@ -1,0 +1,49 @@
+<rdf:RDF xmlns="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+			xml:base="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#" 
+			xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+			xmlns:owl="http://www.w3.org/2002/07/owl#"
+			xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+			xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+			
+<owl:Ontology rdf:about="">
+<owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/protege"/>
+<rdfs:comment>NCI Thesaurus, a controlled vocabulary in support of 
+NCI administrative and scientific activities.
+
+Produced by the Enterprise Vocabulary System (EVS), a 
+collaborative project by the NCI Office of Communications 
+and the NCI Center for Bioinformatics.  National Cancer Institute,
+National Institutes of Health, Bethesda, MD 20892, U.S.A.
+
+The OWL version of the NCI Thesaurus is produced by the 
+EVS in collaboration with Jim Hendler and Jen Golbeck, 
+Maryland Information and Network Dynamics Lab, 
+Semantic Web Agents Project (Mindswap)
+University of Maryland, College Park, Maryland, U.S.A.
+</rdfs:comment>
+<owl:versionInfo>06.07d</owl:versionInfo>
+</owl:Ontology>
+			
+<owl:DatatypeProperty rdf:ID="code">
+<code>AHC0</code>
+<protege:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</protege:readOnly>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:ID="Merge_Into">
+<code>AHC3</code>
+<protege:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</protege:readOnly>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:ID="Split_From">
+<code>AHC4</code>
+<protege:readOnly rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</protege:readOnly>
+<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</owl:DatatypeProperty>
+
+
+

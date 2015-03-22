@@ -1,0 +1,9 @@
+Anatomic_Structure_System_or_Substance
+Biological_Process
+Gene
+Gene_Product
+Molecular_Abnormality
+Organisms
+Abnormal_Cell
+Molecular_Abnormality
+Diseases_Disorders_and_Findings

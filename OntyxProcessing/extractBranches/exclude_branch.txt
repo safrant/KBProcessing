@@ -1,0 +1,7 @@
+Cell_Part
+Cell_Structure
+Extracellular_Space
+Gene_Physical_Location
+Macromolecular_Structure
+Normal_Cell
+Embryologic_Structure_or_System

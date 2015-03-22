@@ -1,0 +1,94 @@
+
+
+$(OBJDR)/OntyxKBQA.o :	$(MYSRCLIB)/OntyxKBQA.cpp $(MYSRCLIB)/OntyxKBQA.h \
+			$(OBJDR)/OntyxKb.o $(OBJDR)/tString.o \
+			$(OBJDR)/OntyxConcept.o $(OBJDR)/OntyxRole.o $(OBJDR)/OntyxName.o \
+			$(OBJDR)/OntyxKind.o $(OBJDR)/OntyxRoleDef.o $(OBJDR)/OntyxRoleEnum.o \
+			$(OBJDR)/OntyxProperty.o $(OBJDR)/OntyxPropertyDef.o $(OBJDR)/OntyxAssociation.o \
+			$(OBJDR)/OntyxTerminology.o $(OBJDR)/OntylogHandler.o $(OBJDR)/OntyxAssociationDef.o \
+			$(OBJDR)/OntyxQualifierDef.o $(OBJDR)/OntyxQualifier.o
+	$(CC) -Wall -c $< -o $@
+
+
+$(OBJDR)/OntyxKb.o : $(MYSRCLIB)/OntyxKb.cpp $(MYSRCLIB)/OntyxKb.h $(OBJDR)/tString.o \
+			$(OBJDR)/OntyxConcept.o $(OBJDR)/OntyxRole.o $(OBJDR)/OntyxName.o \
+			$(OBJDR)/OntyxKind.o $(OBJDR)/OntyxRoleDef.o $(OBJDR)/OntyxRoleEnum.o \
+			$(OBJDR)/OntyxProperty.o $(OBJDR)/OntyxPropertyDef.o $(OBJDR)/OntyxAssociation.o \
+			$(OBJDR)/OntyxTerminology.o $(OBJDR)/OntylogHandler.o $(OBJDR)/OntyxAssociationDef.o \
+			$(OBJDR)/OntyxQualifierDef.o $(OBJDR)/OntyxQualifier.o
+	$(CC) -Wall -c $< -o $@
+
+$(OBJDR)/OntylogHandler.o : $(MYSRCLIB)/OntylogHandler.cpp $(MYSRCLIB)/OntylogHandler.h \
+			$(OBJDR)/OntyxKb.o $(OBJDR)/tString.o \
+			$(OBJDR)/OntyxConcept.o $(OBJDR)/OntyxRole.o $(OBJDR)/OntyxName.o \
+			$(OBJDR)/OntyxKind.o $(OBJDR)/OntyxRoleDef.o $(OBJDR)/OntyxRoleEnum.o \
+			$(OBJDR)/OntyxProperty.o $(OBJDR)/OntyxPropertyDef.o $(OBJDR)/OntyxAssociation.o \
+			$(OBJDR)/OntyxTerminology.o $(OBJDR)/OntyxAssociationDef.o \
+			$(OBJDR)/OntyxQualifierDef.o $(OBJDR)/OntyxQualifier.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxConcept.o : $(MYSRCLIB)/OntyxConcept.cpp $(MYSRCLIB)/OntyxConcept.h \
+			$(OBJDR)/OntyxRole.o $(OBJDR)/OntyxName.o $(OBJDR)/OntyxKind.o \
+			$(OBJDR)/OntyxProperty.o $(OBJDR)/OntyxTerminology.o $(OBJDR)/OntyxAssociation.o 
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxProperty.o : $(MYSRCLIB)/OntyxProperty.cpp $(MYSRCLIB)/OntyxProperty.h \
+			$(OBJDR)/OntyxPropertyDef.o $(OBJDR)/OntyxTerminology.o \
+			$(OBJDR)/OntyxQualifier.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxPropertyDef.o : $(MYSRCLIB)/OntyxPropertyDef.cpp $(MYSRCLIB)/OntyxPropertyDef.h \
+			$(OBJDR)/OntyxName.o $(OBJDR)/OntyxTerminology.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxAssociation.o : $(MYSRCLIB)/OntyxAssociation.cpp $(MYSRCLIB)/OntyxAssociation.h \
+			$(OBJDR)/OntyxName.o $(OBJDR)/OntyxTerminology.o $(OBJDR)/OntyxAssociationDef.o \
+			$(OBJDR)/OntyxQualifier.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxAssociationDef.o : $(MYSRCLIB)/OntyxAssociationDef.cpp $(MYSRCLIB)/OntyxAssociationDef.h \
+			$(OBJDR)/OntyxName.o $(OBJDR)/OntyxTerminology.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxQualifier.o : $(MYSRCLIB)/OntyxQualifier.cpp $(MYSRCLIB)/OntyxQualifier.h \
+			$(OBJDR)/OntyxName.o $(OBJDR)/OntyxTerminology.o $(OBJDR)/OntyxQualifierDef.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxQualifierDef.o : $(MYSRCLIB)/OntyxQualifierDef.cpp $(MYSRCLIB)/OntyxQualifierDef.h \
+			$(OBJDR)/OntyxName.o $(OBJDR)/OntyxTerminology.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxRole.o : $(MYSRCLIB)/OntyxRole.cpp $(MYSRCLIB)/OntyxRole.h \
+			$(OBJDR)/OntyxRoleDef.o $(OBJDR)/OntyxRoleEnum.o $(OBJDR)/OntyxTerminology.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxRoleDef.o : $(MYSRCLIB)/OntyxRoleDef.cpp $(MYSRCLIB)/OntyxRoleDef.h \
+			$(OBJDR)/OntyxName.o $(OBJDR)/OntyxKind.o $(OBJDR)/OntyxTerminology.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxRoleEnum.o : $(MYSRCLIB)/OntyxRoleEnum.cpp $(MYSRCLIB)/OntyxRoleEnum.h \
+			$(OBJDR)/OntyxTerminology.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxKind.o : $(MYSRCLIB)/OntyxKind.cpp $(MYSRCLIB)/OntyxKind.h \
+			$(OBJDR)/OntyxName.o $(OBJDR)/OntyxTerminology.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxName.o : $(MYSRCLIB)/OntyxName.cpp $(MYSRCLIB)/OntyxName.h \
+			$(OBJDR)/OntyxTerminology.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/OntyxTerminology.o : $(MYSRCLIB)/OntyxTerminology.cpp $(MYSRCLIB)/OntyxTerminology.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/fullSyn.o : $(MYSRCLIB)/fullSyn.cpp $(MYSRCLIB)/fullSyn.h $(MYSRCLIB)/fullSynConst.h \
+			$(OBJDR)/tString.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/tString.o : $(GENCPPLIB)/tString.cpp $(GENCPPLIB)/tString.h $(OBJDR)/porterExtern.o
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDR)/porterExtern.o : $(GENCPPLIB)/porterExtern.c $(GENCPPLIB)/porterExtern.h
+	$(GC) $(CFLAGS) -c $< -o $@
+
+

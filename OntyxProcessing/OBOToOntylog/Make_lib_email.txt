@@ -1,0 +1,25 @@
+Tracy,
+  Those are Gilberto's library stuff.
+  I didn't touch those two files.
+  As long as you have those two files in the correspinding directory, you should
+  be able to compile.
+
+Kim 
+
+-----Original Message-----
+From: Safran, Tracy (NIH/NCI) [mailto:safrant@mail.nih.gov]
+Sent: Wednesday, October 19, 2005 12:50 PM
+To: Ong, Kim
+Cc: Fragoso, Gilberto (NIH/NCI)
+Subject: OBO2TDE DOS version
+
+I checked these out and the executables look good.  I did notice that the make files refer to an "include ../lib/makefile.head" and "include ../lib/makefile.incl".  If I need to build this for some reason, what would I need to gather?
+
+No hurry.
+
+Thanks,
+
+Tracy M. Safran
+Contractor - SAIC Frederick
+caLIMS, EVS support
+301-402-1537

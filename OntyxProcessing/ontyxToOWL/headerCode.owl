@@ -1,0 +1,17 @@
+<rdf:RDF xmlns="http://www.geneontology.org/formats/oboInOwl#"
+			xml:base="http://www.geneontology.org/formats/oboInOwl#" 
+			xmlns:owl="http://www.w3.org/2002/07/owl#"
+			xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+			xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+
+<!-- the default and base namespace have to be filled-in for each vocabulary -->
+
+			
+<owl:Ontology rdf:about="">
+<owl:versionInfo>December2008</owl:versionInfo>
+</owl:Ontology>
+			
+
+
+

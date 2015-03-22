@@ -1,0 +1,1 @@
+OBO2TDE gene_ontology.obo template.dat tagheader.dat gene_ontology.xml

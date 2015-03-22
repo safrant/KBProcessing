@@ -1,0 +1,13 @@
+include ../lib/makefile.head
+
+OBJL = OBO2TDE.o $(OBJ)
+
+OBO2TDE.exe : OBO2TDE.o $(OBJ)
+
+	$(CC) $(CFLAGS) -lxerces-c2_6_0 -Lc:/MinGW/bin $(OBJL) -I$(MYSRCLIB)  -o $@
+
+OBO2TDE.o : OBO2TDE.cpp 
+	$(CC) $(CFLAGS) -I$(MYSRCLIB) -c $< -o $@
+
+include ../lib/makefile.incl
+
